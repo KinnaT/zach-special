@@ -48,7 +48,7 @@ function zach_scripts() {
 
 	// Theme stylesheet.
 	wp_enqueue_style( 'zach-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'pretty', 'pretty.css' );
+	wp_enqueue_style( 'pretty', get_template_directory_uri() . '/css/pretty.css' );
 
 	wp_enqueue_script( 'zach-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '20160816', true );
 }
