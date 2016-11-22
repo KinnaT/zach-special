@@ -1,0 +1,43 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+.nav {
+    width: 100%;
+}
+#menu-menu {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#menu-menu>li {
+    margin: 1%;
+    box-sizing: border-box;
+}
+.content {
+    width: 66%;
+    display: inline-block;
+}
+.sidebar {
+    width: 33%;
+    display: inline-block;
+    float; right;
+}
+.sidebar ul {
+    list-style: none;
+}
+.fourohfour {
+    max-width: 100%;
+    height: auto;
+    background-color: #000;
+    background-image: url('https://zachschneider.com/blog/wp-content/uploads/2016/11/grim-repo.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.center {
+    width: auto;
+    position: relative;
+    margin: 0 auto;
+}
