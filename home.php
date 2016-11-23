@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="content home">
-	<?php 
+	<?php
 	if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		<div class="blog-post">
 			<h2 class="blog-post-title"><?php the_title(); ?></h2>

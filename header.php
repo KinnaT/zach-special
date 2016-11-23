@@ -13,9 +13,9 @@
     <div id="page">
         <div class="header">
             <!-- This isn't totally mobile-friendly right now. -->
-            <div id="header-star"></div>
-            <div id="header-star"></div>
+            <div class="header-star"></div>
+            <div class="header-star"></div>
             <div class="nav"><?php wp_nav_menu(); ?></div>
-            <div id="header-star" class="right"></div>
-            <div id="header-star" class="right"></div>
+            <div class="header-star" class="right"></div>
+            <div class="header-star" class="right"></div>
         </div>

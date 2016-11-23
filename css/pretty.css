@@ -39,7 +39,7 @@ h2 {
     background-color: #B3DDF2;
     line-height: 3em;
 }
-#header-star {
+.header-star {
     background-image: url(//zkm.s3.amazonaws.com/428923.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -85,7 +85,7 @@ li.menu-item {
 }
 
 .content {
-  max-width: 500px;
+  max-width: 600px;
   width: 66%;
   display: inline-block;
 }
@@ -158,10 +158,17 @@ li.menu-item {
     max-width: 100%;
     height: auto;
   }
+  #page {
+    padding: 0 10px;
+  }
   .content {
     width: 100%;
   }
   .sidebar {
     width: 100%;
   }
+  .nav {
+    width: 65%;
+  }
+
 }
