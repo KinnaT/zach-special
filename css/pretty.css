@@ -8,18 +8,44 @@ body {
   width: 100%;
   height: 100%;
   top: 0;
-  padding: 0 20px;
 }
-
+.center {
+    width: auto;
+    position: relative;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+}
+.right {
+    position: relative;
+    float: right;
+}
 #page {
   max-width: 900px;
   margin: auto;
+  padding: 0 20px;
 }
-
+.header {
+    background-color: #B3DDF2;
+    line-height: 3em;
+}
+#header-star {
+    background-image: url(https://zachschneider.com/blog/wp-content/uploads/2016/11/428923.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: 5%;
+    height: 3em;
+    margin: 1%;
+    position: relative;
+    vertical-align: middle;
+}
 .nav {
-    width: 100%;
+    display: inline-block;
+    width: 70%;
+    font-weight: 600;
 }
-#menu-menu {
+#menu-header {
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -27,9 +53,13 @@ body {
     margin: 0;
     padding: 0;
 }
-#menu-menu > li {
+#menu-header > li {
     margin: 1%;
     box-sizing: border-box;
+    text-decoration: none;
+}
+#menu-header > li:first {
+    margin-left: 3%;
 }
 .content {
   max-width: 500px;
@@ -44,48 +74,41 @@ body {
 .sidebar ul {
     list-style: none;
 }
-.fourohfour {
-    max-width: 100%;
-    height: auto;
+.error404 {
     background-color: #000;
+    color: #fff;
+}
+.fourohfour {
+    max-width: 500px;
+    width: 66%;
+    height: auto;
+    top: 0;
+    margin: 0;
+    position: absolute;
+    color: #fff;
     background-image: url('//zkm.s3.amazonaws.com/grim-repo.jpg');
     background-repeat: no-repeat;
     background-size: contain;
 }
-.center {
-    width: auto;
-    position: relative;
-    margin: 0 auto;
-    display: inline-block;
-	text-align: center;
-}
-.fourohfour {
-	top: 0;
-	margin: 0;
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	color: #fff;
-}
+
 .fourohfour .center {
-	width: 100%;
-	box-sizing: border-box;
-	margin-top: 2em;
+    width: 100%;
+    margin-top: 2em;
 }
 .fourohfour a {
-	color: #fff;
-	text-decoration: none;
+    color: #fff;
+    text-decoration: none;
 }
 .saveme {
-	color: #fff;
-	font-size: 1.4em;
-	line-height: 2em;
-	margin: 0;
+    color: #fff;
+    font-size: 1.4em;
+    line-height: 2em;
+    margin: 0;
 }
 .saveme .dashicons {
-	font-size: 1.5em;
-	margin-right: 5px;
-	width: 1.5em;
+    font-size: 1.5em;
+    margin-right: 5px;
+    width: 1.5em;
 }
 
 // Media Queries for Tablet
