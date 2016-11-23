@@ -1,10 +1,21 @@
-body {
-    font-family: 'Raleway', sans-serif;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    top: 0;
+* {
+    box-sizing: border-box;
 }
+
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  padding: 0 20px;
+}
+
+#page {
+  max-width: 900px;
+  margin: auto;
+}
+
 .nav {
     width: 100%;
 }
@@ -16,18 +27,19 @@ body {
     margin: 0;
     padding: 0;
 }
-#menu-menu>li {
+#menu-menu > li {
     margin: 1%;
     box-sizing: border-box;
 }
 .content {
-    width: 66%;
-    display: inline-block;
+  max-width: 500px;
+  width: 66%;
+  display: inline-block;
 }
 .sidebar {
-    width: 33%;
-    display: inline-block;
-    float; right;
+  width: 33%;
+  display: inline-block;
+  float; right;
 }
 .sidebar ul {
     list-style: none;
@@ -36,7 +48,7 @@ body {
     max-width: 100%;
     height: auto;
     background-color: #000;
-    background-image: url('https://zachschneider.com/blog/wp-content/uploads/2016/11/grim-repo.jpg');
+    background-image: url('//zkm.s3.amazonaws.com/grim-repo.jpg');
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -51,7 +63,7 @@ body {
 	top: 0;
 	margin: 0;
 	position: absolute;
-	height: 100% !important;
+	height: 100%;
 	width: 100%;
 	color: #fff;
 }
@@ -74,4 +86,25 @@ body {
 	font-size: 1.5em;
 	margin-right: 5px;
 	width: 1.5em;
+}
+
+// Media Queries for Tablet
+@viewport {
+  width: device-width;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 120%;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .content {
+    width: 100%;
+  }
+  .sidebar {
+    width: 100%;
+  }
 }
