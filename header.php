@@ -10,12 +10,14 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-    <div id="page">
         <div class="header">
-            <!-- This isn't totally mobile-friendly right now. -->
-            <div class="header-star"></div>
-            <div class="header-star"></div>
-            <div class="nav"><?php wp_nav_menu(); ?></div>
-            <div class="header-star" class="right"></div>
-            <div class="header-star" class="right"></div>
+            <div class="wrap">
+                <!-- This isn't totally mobile-friendly right now. -->
+                <div class="header-star"></div>
+                <div class="header-star"></div>
+                <div class="nav"><?php wp_nav_menu(); ?></div>
+                <div class="header-star" class="right"></div>
+                <div class="header-star" class="right"></div>
+            </div>
         </div>
+    <div id="page">
