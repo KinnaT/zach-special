@@ -461,7 +461,7 @@ footer[role="contentinfo"] a:hover {
     width: 100%;
   }
 
-  .sidebar {
+  .sidebar, .primary-sidebar {
     display: none;
   }
 }
