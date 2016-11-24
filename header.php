@@ -22,7 +22,7 @@
                     'menu_class'     => 'menu'
                 ));
                 ?>
-                </nav><!-- .main-navigation -->
+                </nav>
             <?php endif; ?>
             <div class="header-star"></div>
             <div class="header-star"></div>

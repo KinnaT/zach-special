@@ -80,7 +80,7 @@ h2 {
 #page {
   max-width: 900px;
   margin: auto;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 .wrap {
   max-width: 80%;
@@ -158,20 +158,20 @@ h2 {
 }
 
 
-#menu-header ul {
+#menu-header {
     width: 100%;
-    display: flex;
-    justify-content: flex-start;
+    display: block;
+    text-align: center;
     list-style: none;
     margin: 0;
     padding: 0;
 }
-#menu-header ul > li {
+#menu-header > li {
     margin: 1%;
     box-sizing: border-box;
     text-decoration: none;
 }
-#menu-header ul > li:first {
+#menu-header > li:first {
     margin-left: 3%;
 }
 ul.menu {
@@ -184,6 +184,24 @@ li.menu-item, li.page_item {
   padding: 0;
   margin: 0;
 }
+.main-navigation li a,
+.main-navigation li {
+  display: inline-block;
+  text-decoration: none;
+}
+.main-navigation li a {
+  border-bottom: 0;
+  color: #6a6a6a;
+  line-height: 3.692307692;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.main-navigation li a:hover,
+.main-navigation li a:focus {
+  color: #000;
+}
+
+
 .content {
   max-width: 600px;
   width: 66%;
@@ -438,6 +456,16 @@ footer[role="contentinfo"] a:hover {
 @viewport {
   width: device-width;
 }
+@media screen and (max-width: 600px) {
+  .content {
+    width: 100%;
+  }
+
+  .sidebar {
+    display: none;
+  }
+}
+
 
 /* Minimum width of 600 pixels. */
 @media screen and (min-width: 600px) {
@@ -490,22 +518,6 @@ footer[role="contentinfo"] a:hover {
   .main-navigation ul {
     margin: 0;
     text-indent: 0;
-  }
-  .main-navigation li a,
-  .main-navigation li {
-    display: inline-block;
-    text-decoration: none;
-  }
-  .main-navigation li a {
-    border-bottom: 0;
-    color: #6a6a6a;
-    line-height: 3.692307692;
-    text-transform: uppercase;
-    white-space: nowrap;
-  }
-  .main-navigation li a:hover,
-  .main-navigation li a:focus {
-    color: #000;
   }
   .main-navigation li {
     margin: 0 40px 0 0;
