@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
 }
-
 body {
   font-family: 'Raleway', sans-serif;
   margin: 0;
@@ -10,7 +9,6 @@ body {
   height: 100%;
   top: 0;
 }
-
 h1 {
 
 }
@@ -18,7 +16,6 @@ h2 {
   padding: 0;
   margin: 10px 0;
 }
-
 .center {
     width: auto;
     position: relative;
@@ -39,12 +36,10 @@ h2 {
   margin: auto;
   padding: 0 20px;
 }
-
 .wrap {
   max-width: 80%;
   margin: auto;
 }
-
 .header {
     background-color: #B3DDF2;
     line-height: 3em;
@@ -65,7 +60,7 @@ h2 {
     width: 70%;
     font-weight: 600;
 }
-#menu-header {
+#menu-header ul {
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -73,27 +68,24 @@ h2 {
     margin: 0;
     padding: 0;
 }
-#menu-header > li {
+#menu-header ul > li {
     margin: 1%;
     box-sizing: border-box;
     text-decoration: none;
 }
-#menu-header > li:first {
+#menu-header ul > li:first {
     margin-left: 3%;
 }
-
 ul.menu {
   padding: 0;
   margin: 0;
 }
-
-li.menu-item {
+li.menu-item, li.page_item {
   display: inline-block;
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
 .content {
   max-width: 600px;
   width: 66%;
@@ -155,6 +147,44 @@ li.menu-item {
     overflow: hidden;
 }
 
+/**
+ * Footer
+ */
+
+.site-footer {
+  padding: 0 0 1.75em;
+}
+
+.site-info {
+  color: #686868;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 1.6153846154;
+}
+
+.site-info a {
+  color: #686868;
+}
+
+.site-info a:hover,
+.site-info a:focus {
+  color: #007acc;
+}
+
+.site-footer .site-title {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.site-footer .site-title:after {
+  content: "\002f";
+  display: inline-block;
+  font-family: Montserrat, sans-serif;
+  opacity: 0.7;
+  padding: 0 0.307692308em 0 0.538461538em;
+}
+
 // Media Queries for Tablet
 @viewport {
   width: device-width;
@@ -180,5 +210,4 @@ li.menu-item {
   .nav {
     width: 65%;
   }
-
 }

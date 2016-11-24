@@ -12,12 +12,28 @@
 <body <?php body_class(); ?>>
         <div class="header">
             <div class="wrap">
+                <div class="header-star"></div>
+                <div class="header-star"></div>
+                <?php if ( has_nav_menu( 'primary' ) ) : ?>
+                <nav class="main-navigation nav" role="navigation">
+                    <?php
+                    wp_nav_menu(array(
+                        'theme_location' => 'primary',
+                        'menu_id'        => 'menu-header',
+                        'menu_class'     => 'menu'
+                    ));
+                    ?>
+                </nav><!-- .main-navigation -->
+                <?php endif; ?>
+                <div class="header-star"></div>
+                <div class="header-star"></div>
+
                 <!-- This isn't totally mobile-friendly right now. -->
+                <!-- <div class="header-star"></div>
                 <div class="header-star"></div>
-                <div class="header-star"></div>
-                <div class="nav"><?php wp_nav_menu(); ?></div>
+                <div class="nav"><?php //wp_nav_menu(); ?></div>
                 <div class="header-star" class="right"></div>
-                <div class="header-star" class="right"></div>
+                <div class="header-star" class="right"></div> -->
             </div>
         </div>
     <div id="page">
