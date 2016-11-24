@@ -30,6 +30,10 @@ h2 {
     position: relative;
     float: right;
 }
+.left {
+    position: relative;
+    float: left;
+}
 #page {
   max-width: 900px;
   margin: auto;
@@ -110,31 +114,31 @@ li.menu-item {
     color: #fff;
 }
 .fourohfour {
-    max-width: 500px;
-    width: 66%;
-    height: auto;
-    top: 0;
-    margin: 0;
     position: absolute;
-    color: #fff;
+    left: 50%;
     background-image: url('//zkm.s3.amazonaws.com/grim-repo.jpg');
     background-repeat: no-repeat;
     background-size: contain;
+    width: 60%;
+    height: 100%;
+    line-height: 1;
 }
 
-.fourohfour .center {
-    width: 100%;
-    margin-top: 2em;
+.fourohfour .text-left {
+    color: #fff;
+    position: relative;
+    left: -50%;
 }
 .fourohfour a {
     color: #fff;
     text-decoration: none;
 }
 .saveme {
-    color: #fff;
-    font-size: 1.4em;
-    line-height: 2em;
-    margin: 0;
+  color: #fff;
+  font-size: 1em;
+  margin: 0;
+  position: relative;
+  left: -50%;
 }
 .saveme .dashicons {
     font-size: 1.5em;
